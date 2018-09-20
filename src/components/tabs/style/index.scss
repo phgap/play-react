@@ -1,0 +1,22 @@
+.tabs {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  .tab {
+    flex: 1;
+    height: 40px;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid gray;
+    border-right-width: 0;
+    background: #ccc;
+  }
+  .tab:last-of-type {
+    border-right-width: 1px;
+  }
+  .tab.current {
+    background: #f60;
+  }
+}
